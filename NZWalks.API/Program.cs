@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<NZWalksDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalks"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnection"));
 });
 
 var app = builder.Build();
