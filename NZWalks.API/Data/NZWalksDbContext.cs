@@ -46,35 +46,35 @@ namespace NZWalks.API.Data
             modelBuilder.Entity<Region>().HasData(
                 new Region
                 {
-                    Id = Guid.Parse("a1f5c1e2-3b6d-4f8a-9f1e-1c2d3e4f5a6b"),
+                    Id = Guid.Parse("7503ec2d-3354-4c65-bfdc-b9727caf7dd5"),
                     Name = "Nairobi",
                     Code = "NRB",
                     RegionImageUrl = "https://example.com/images/nairobi.jpg"
                     },
                 new Region
                 {
-                    Id = Guid.Parse("b2e6d2f3-4c7e-5f9b-0g2h-2d3e4f5a6b7c"),
+                    Id = Guid.Parse("94dbd6b3-31f2-48ed-b7e9-02f5e74a660d"),
                     Name = "Mombasa",
                     Code = "MBA",
                     RegionImageUrl = "https://example.com/images/mombasa.jpg"
                 },
                 new Region
                 {
-                    Id = Guid.Parse("c3f7e3g4-5h8i-6j0k-1l3m-3e4f5a6b7c8d"),
+                    Id = Guid.Parse("0bb8403e-c4a6-410c-b2b1-117762a25b0d"),
                     Name = "Kisumu",
                     Code = "KIS",
                     RegionImageUrl = "https://example.com/images/kisumu.jpg"
                 },
                 new Region
                 {
-                    Id = Guid.Parse("d4g8h4i5-6j9k-7l1m-2n4o-4f5a6b7c8d9e"),
+                    Id = Guid.Parse("5a46ef1b-f149-4be4-b627-0c5832128326"),
                     Name = "Nakuru",
                     Code = "NKU",
                     RegionImageUrl = "https://example.com/images/nakuru.jpg"
                 },
                 new Region
                 {
-                    Id = Guid.Parse("e5h9i5j6-7k0l-8m2n-3o5p-5a6b7c8d9e0f"),
+                    Id = Guid.Parse("557fb860-ba91-46e2-b821-84433398319f"),
                     Name = "Eldoret",
                     Code = "ELD",
                     RegionImageUrl = "https://example.com/images/eldoret.jpg"
