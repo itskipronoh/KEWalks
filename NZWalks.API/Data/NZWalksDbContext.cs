@@ -43,6 +43,47 @@ namespace NZWalks.API.Data
 
             //seed data for Regions
 
+            modelBuilder.Entity<Region>().HasData(
+                new Region
+                {
+                    Id = Guid.Parse("a1f5c1e2-3b6d-4f8a-9f1e-1c2d3e4f5a6b"),
+                    Name = "Nairobi",
+                    Code = "NRB",
+                    RegionImageUrl = "https://example.com/images/nairobi.jpg"
+                    },
+                new Region
+                {
+                    Id = Guid.Parse("b2e6d2f3-4c7e-5f9b-0g2h-2d3e4f5a6b7c"),
+                    Name = "Mombasa",
+                    Code = "MBA",
+                    RegionImageUrl = "https://example.com/images/mombasa.jpg"
+                },
+                new Region
+                {
+                    Id = Guid.Parse("c3f7e3g4-5h8i-6j0k-1l3m-3e4f5a6b7c8d"),
+                    Name = "Kisumu",
+                    Code = "KIS",
+                    RegionImageUrl = "https://example.com/images/kisumu.jpg"
+                },
+                new Region
+                {
+                    Id = Guid.Parse("d4g8h4i5-6j9k-7l1m-2n4o-4f5a6b7c8d9e"),
+                    Name = "Nakuru",
+                    Code = "NKU",
+                    RegionImageUrl = "https://example.com/images/nakuru.jpg"
+                },
+                new Region
+                {
+                    Id = Guid.Parse("e5h9i5j6-7k0l-8m2n-3o5p-5a6b7c8d9e0f"),
+                    Name = "Eldoret",
+                    Code = "ELD",
+                    RegionImageUrl = "https://example.com/images/eldoret.jpg"
+                }
+
+
+
+            );
+
         }
 
 
