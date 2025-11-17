@@ -84,6 +84,38 @@ namespace NZWalks.API.Data
 
             );
 
+            //seed data for Walks can be added here in future if needed
+            modelBuilder.Entity<Walk>().HasData(
+               new Walk
+               {
+                   Id = Guid.Parse("62e0c8ff-fba9-4059-9cbb-9a1e586cd13b"),
+                   Name = "Sunset Trail",
+                   Description = "A beautiful walk to enjoy the sunset views.",
+                   LengthInKm = 5.5,
+
+                   RegionId = Guid.Parse("7503ec2d-3354-4c65-bfdc-b9727caf7dd5"), // Nairobi
+                   DifficultyId = Guid.Parse("5420d83f-e63e-4981-b768-d67935b9c7e1") // Easy
+               },
+               new Walk
+               {
+                   Id = Guid.Parse("8d9ccf12-bcf2-4abe-9789-8ffe72636fcd"),
+                   Name = "Coastal Breeze",
+                   Description = "A refreshing walk along the coast.",
+                   LengthInKm = 8.2,
+                   RegionId = Guid.Parse("94dbd6b3-31f2-48ed-b7e9-02f5e74a660d"), // Mombasa
+                   DifficultyId = Guid.Parse("494667ce-47b6-4544-9c8a-0fa7e4db7ff1") // Medium
+               },
+               new Walk
+               {
+                   Id = Guid.Parse("48e0242a-084f-4f75-b577-b7eca30a1b1a"),
+                   Name = "Lakeside Loop",
+                   Description = "A challenging walk around the lake.",
+                   LengthInKm = 10.0,
+                   RegionId = Guid.Parse("0bb8403e-c4a6-410c-b2b1-117762a25b0d"), // Kisumu
+                   DifficultyId = Guid.Parse("1cff7579-3a13-4fba-8d9c-1e22c9e57db1") // Hard
+               }
+           );
+
         }
 
 
