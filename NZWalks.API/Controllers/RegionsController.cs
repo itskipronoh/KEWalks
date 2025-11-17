@@ -47,7 +47,7 @@ namespace NZWalks.API.Controllers
             await dbContext.SaveChangesAsync();
             return CreatedAtAction(nameof(GetRegionById), new { id = region.Id }, region);
         }
-        // UPDATE region
+        // UPDATE region by d
         [HttpPut("{id:guid}")]
         public async Task<IActionResult> UpdateRegion(Guid id, Region updatedRegion)
         {
@@ -61,7 +61,7 @@ namespace NZWalks.API.Controllers
             await dbContext.SaveChangesAsync();
             return NoContent();
         }
-        // DELETE region
+        // DELETE region by d
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteRegion(Guid id)
         {
