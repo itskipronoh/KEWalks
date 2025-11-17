@@ -1,10 +1,12 @@
-using system;
+using System;
 using Microsoft.AspNetCore.Mvc;
 using NZWalks.API.Data;
 using NZWalks.API.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
+[ApiController]
+[Route("api/[controller]")]
 public class DifficultyController : ControllerBase
 {
 	private readonly NZWalksDbContext dbContext;
